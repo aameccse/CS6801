@@ -1,0 +1,63 @@
+
+<html ><style type ="text/css">
+<style>head{background-color:"red";}
+</style><title>Online Resources</title>
+<head><h1 style="text-align:center;" ><font color="white">Online Resources</font></h1></head>
+<body style="background-color:#48C9B0;font-size:20px;">
+
+<ol>
+<li><a href="Caches2.pdf">Caches2 </a></li>
+<li><a href="Coherence1.pdf">Coherence1</a></li>
+<li><a href="Coherence2.pdf">Coherence2</a></li>
+<li><a href="Moore Law.pdf">Moore Law</a></li>
+<li><a href="Moore Law2.pdf">Moore Law2</a></li>
+<li><a href="Multicore.pdf">Multicore</a></li>
+<li><a href="Multicore-CDAC.pdf">Multicore-CDAC</a></li>
+<li><a href="Multicore-Springer.pdf">Multicore-Springer</a></li>
+<li><a href="Multi-Springer.pdf">Multi-Springer</a></li>
+<li><a href="OpenMP1.pdf">OpenMP1</a></li>
+<li><a href="OpenMP2.pdf">OpenMP2</a></li>
+<li><a href="ParallelComputers1.pdf">ParallelComputers1</a></li>
+<li><a href="ParallelComputers2.pdf">ParallelComputers2</a></li>
+<li><a href="Parallelprogram1.pdf">Parallelprogram1</a>
+</li><li><a href="Parallelprogram2.pdf">Parallelprogram2</a></li>
+<li><a href="Problem&Soln1.pdf">Problem&Soln1</a></li>
+<li><a href="Problem&Soln2.pdf">Problem&Soln2</a></li>
+<li><a href="SharedMem1.pdf">SharedMem1</a></li>
+<li><a href="SharedMem2.pdf">SharedMem2</a></li>
+<li><a href="Synchronization1.pdf">Synchronization1</a></li>
+<li><a href="Synchronization2.pdf">Synchronization2</a></li>
+<li><a href="VirtualMemory&Caches.pdf">VirtualMemory&Caches</a></li>
+</ol>
+<p>* In the files are PDF document.</p>
+
+</body><script>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+</script>
+</html>
